@@ -20,5 +20,20 @@ public class LambdaExercises {
         anonymousClassReference.silnoreki();
 
 
+        // () parenthesis = arguments list
+        // -> arguments, body separator
+        // {} parenthesis - method body
+        //metoda nic nie przyjmuje i nic nie zwraca
+
+        BoysDontCry firstLambda = () -> {};
+        BoysDontCry secondLambda = () -> System.out.println("Lambda:)");
+        secondLambda.silnoreki();
+        BoysDontCry thirdLambda = () ->
+        {
+            System.out.println("one");
+            System.out.println("second");
+
+        };
+
     }
 }

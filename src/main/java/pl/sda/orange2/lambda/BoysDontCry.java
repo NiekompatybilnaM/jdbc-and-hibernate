@@ -1,12 +1,8 @@
 package pl.sda.orange2.lambda;
 
+
+//It's functional interface because has one abstract method
 public interface BoysDontCry {
     void silnoreki();
-
-    BoysDontCry anonymousClassReference = new BoysDontCry() {
-        @Override
-        public void silnoreki() {
-            System.out.println("Anonimowy silnoreki:)");
-        }
-    };
+    default void cry() {}
 }
